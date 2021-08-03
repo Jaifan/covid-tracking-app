@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+@import url('https://post.medicalnewstoday.com/wp-content/uploads/sites/3/2020/03/Coronavirus-illustration-1200x628.jpg');
+*{
+  margin: 0;
+}
+
+body{
+  background-image: url('https://post.medicalnewstoday.com/wp-content/uploads/sites/3/2020/03/Coronavirus-illustration-1200x628.jpg');
+}
+
+
+* {
+  margin: 0;
+}
+
+
+.app {
+  display: flex;
+  justify-content: space-evenly;
+  background-image: url('https://post.medicalnewstoday.com/wp-content/uploads/sites/3/2020/03/Coronavirus-illustration-1200x628.jpg');
+  padding: 20px;
+}
+
+.app__dropdown {
+  background-color: white;
+}
+
+.app__header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+
+.app__header > h1 {
+  color: white;
+  font-size: 2rem;
+}
+
+.app__stats {
+  display: flex;
+  justify-content: space-between;
+}
+
+.app__left {
+  flex: 0.9;
+}
+
+.app__information > h3 {
+  color: #6a5d5d;
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.app__information > h3:last-of-type {
+  margin-top: 1rem;
+}
+
+@media (max-width: 990px) {
+  .app {
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .app__stats {
+    flex-direction: column;
+  }
+}
+
+
+
